@@ -20,3 +20,11 @@ spec:
       workspaces:
         - name: source
           workspace: pipeline-ws
+    - name: build
+      taskRef:
+        name: build-task
+      runAfter:
+        - tests
+      workspaces:
+        - name: source
+          workspace: pipeline-ws
