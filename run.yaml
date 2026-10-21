@@ -5,6 +5,9 @@ metadata:
 spec:
   pipelineRef:
     name: tax-calculator-pipeline
+  params:
+    - name: repo-url
+      value: "https://github.com/Yerassyl077/juphc-tc_pipeline.git"
   workspaces:
     - name: pipeline-ws
       volumeClaimTemplate:
